@@ -1,0 +1,9 @@
+export { default as HomeHero } from './components/HomeHero';
+export { default as HomeServices } from './components/HomeServices';
+export { default as HomeAbout } from './components/HomeAbout';
+export { default as HomeOffers } from './components/HomeOffers';
+export { default as HomeTeam } from './components/HomeTeam';
+export { default as HomeTestimonials } from './components/HomeTestimonials';
+export { default as HomeGallery } from './components/HomeGallery';
+export { default as HomeBookingCTA } from './components/HomeBookingCTA';
+export { default as HomeContact } from './components/HomeContact';
