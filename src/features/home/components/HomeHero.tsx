@@ -1,6 +1,7 @@
 
 import Link from 'next/link';
 import { ArrowDownRight, ArrowRight, Sparkles } from 'lucide-react';
+import Image from 'next/image';
 
 
 
@@ -31,7 +32,7 @@ export default function HomeHero() {
           </p>
 
           <div className="mt-9 flex flex-col gap-4 sm:flex-row">
-            <Link href="/book" className="inline-flex items-center justify-center gap-3 rounded-full bg-[#a47753] px-7 py-4 text-sm font-medium text-white transition hover:bg-[#896343]">
+            <Link href="/appointments" className="inline-flex items-center justify-center gap-3 rounded-full bg-[#a47753] px-7 py-4 text-sm font-medium text-white transition hover:bg-[#896343]">
               Book Your Appointment <ArrowRight size={17} />
             </Link>
             <Link href="/services" className="inline-flex items-center justify-center gap-2 rounded-full border border-[#d9c5b2] px-7 py-4 text-sm font-medium text-[#604a3a] transition hover:bg-white">
@@ -45,7 +46,53 @@ export default function HomeHero() {
             <div><p className="font-serif text-2xl text-[#49372d]">Your time</p><p className="mt-1 text-xs text-[#806d5f]">Your moment to unwind</p></div>
           </div>
         </div>
+        <div className="relative mx-auto w-full max-w-lg lg:max-w-none">
+  <div className="absolute -inset-4 rotate-3 rounded-[48%_48%_12px_12px] border border-[#d9c1aa]" />
 
+  <div className="relative aspect-[4/5] overflow-hidden rounded-[48%_48%_12px_12px] bg-[#eadbd0]">
+
+    {/* Hero Image */}
+    <Image
+      src="/images/hero_img/hero.png"
+      alt="Maison Belle Beauty and Wellness"
+      fill
+      priority
+      sizes="(max-width: 1024px) 100vw, 50vw"
+      className="object-cover object-center"
+    />
+
+    {/* Image Overlay */}
+    <div className="absolute inset-0 bg-gradient-to-t from-[#49372d]/70 via-transparent to-transparent" />
+
+    {/* Everyday Badge */}
+    <div className="absolute left-6 top-8 rounded-full bg-[#fffdf9]/90 px-4 py-2 text-xs tracking-wide text-[#604a3a]">
+      A little luxury, every day
+    </div>
+
+    {/* Bottom Text */}
+    <div className="absolute bottom-8 left-7 right-7 text-white">
+      <p className="font-serif text-3xl sm:text-4xl">
+        Feel beautifully you.
+      </p>
+
+      <p className="mt-3 max-w-xs text-sm leading-6 text-white/90">
+        A calmer space. A thoughtful touch. A moment that is yours.
+      </p>
+    </div>
+  </div>
+
+  {/* Floating Card */}
+  <div className="absolute -bottom-5 -left-2 rounded-2xl border border-[#e8d8c9] bg-[#fffdf9] px-5 py-4 shadow-lg sm:-left-8">
+    <p className="font-serif text-lg text-[#49372d]">
+      Made for you
+    </p>
+
+    <p className="mt-1 text-xs text-[#806d5f]">
+      Your self-care ritual starts here
+    </p>
+  </div>
+</div>
+{/* 
         <div className="relative mx-auto w-full max-w-lg lg:max-w-none">
           <div className="absolute -inset-4 rotate-3 rounded-[48%_48%_12px_12px] border border-[#d9c1aa]" />
           <div className="relative aspect-[4/5] overflow-hidden rounded-[48%_48%_12px_12px] bg-[#eadbd0]">
@@ -63,7 +110,7 @@ export default function HomeHero() {
             <p className="font-serif text-lg text-[#49372d]">Made for you</p>
             <p className="mt-1 text-xs text-[#806d5f]">Your self-care ritual starts here</p>
           </div>
-        </div>
+        </div> */}
       </div>
     </section>
   );

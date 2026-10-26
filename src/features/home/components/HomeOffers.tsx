@@ -75,7 +75,7 @@ export default function HomeOffers() {
                 ))}
               </ul>
 
-              <Link href="/book" className="relative mt-7 inline-flex items-center gap-2 text-sm font-semibold text-[#79583e] transition hover:gap-3">
+              <Link href="/appointments" className="relative mt-7 inline-flex items-center gap-2 text-sm font-semibold text-[#79583e] transition hover:gap-3">
                 Explore & Book <ArrowRight size={16} />
               </Link>
             </article>
