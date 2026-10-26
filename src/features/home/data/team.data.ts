@@ -19,7 +19,7 @@ export const teamMembers: TeamMember[] = [
     experience: '5 years of experience',
     specialties: ['Facials', 'Skin Care', 'Beard Care'],
     initials: 'RS',
-    image: '/images/teams/mehdi-pezhvak-KipnoM-k7Lc-unsplash.jpg',
+    image: '/images/teams/images.jpeg',
   },
   {
     id: 'stylist-3',
