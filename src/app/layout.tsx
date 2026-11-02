@@ -1,25 +1,26 @@
 
-import type { Metadata } from 'next';
-import type { ReactNode } from 'react';
-import './globals.css';
-import Header from '../components/layout/Header';
-import Footer from '../components/layout/Footer';
+import type { Metadata } from "next";
+import type { ReactNode } from "react";
+import "./globals.css";
+import Header from "../components/layout/Header";
+import Footer from "../components/layout/Footer";
 
 export const metadata: Metadata = {
   title: {
-    default: 'Maison Belle | Beauty & Wellness',
-    template: '%s | Maison Belle',
+    default: "Maison Belle | Beauty & Wellness",
+    template: "%s | Maison Belle",
   },
-  description: 'Discover personalised beauty treatments, expert care and relaxing salon experiences at Maison Belle.',
+  description:
+    "Discover personalised beauty treatments, expert care and relaxing salon experiences at Maison Belle.",
 };
 
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="en">
-      <body className="min-h-screen bg-[#fffdf9] antialiased">
-         <Header />
+      <body className="min-h-screen bg-[#fffdf9] text-stone-800 antialiased">
+        <Header />
         {children}
-        <Footer/>
+        <Footer />
       </body>
     </html>
   );
