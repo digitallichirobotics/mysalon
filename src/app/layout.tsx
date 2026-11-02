@@ -3,6 +3,7 @@ import type { Metadata } from 'next';
 import type { ReactNode } from 'react';
 import './globals.css';
 import Header from '../components/layout/Header';
+import Footer from '../components/layout/Footer';
 
 export const metadata: Metadata = {
   title: {
@@ -18,6 +19,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
       <body className="min-h-screen bg-[#fffdf9] antialiased">
          <Header />
         {children}
+        <Footer/>
       </body>
     </html>
   );

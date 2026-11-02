@@ -84,7 +84,7 @@ export default function HomeContact() {
               <p className="mt-2 text-sm leading-6 text-[#806d5f]">
                 Reserve your preferred treatment and make your next visit something special.
               </p>
-              <Link href="/book" className="mt-5 inline-flex w-full items-center justify-center gap-2 rounded-full bg-[#76543d] px-5 py-3.5 text-sm font-medium text-white transition hover:bg-[#5d402e]">
+              <Link href="/appointments" className="mt-5 inline-flex w-full items-center justify-center gap-2 rounded-full bg-[#76543d] px-5 py-3.5 text-sm font-medium text-white transition hover:bg-[#5d402e]">
                 Book your appointment <ArrowRight size={16} />
               </Link>
             </div>

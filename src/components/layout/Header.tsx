@@ -55,7 +55,7 @@ export default function Header() {
         </nav>
 
         <div className="hidden lg:block">
-          <Link href="/book" className="inline-flex items-center gap-2 rounded-full bg-[#76543d] px-5 py-3 text-xs font-semibold text-white transition hover:bg-[#5d402e]">
+          <Link href="/appointments" className="inline-flex items-center gap-2 rounded-full bg-[#76543d] px-5 py-3 text-xs font-semibold text-white transition hover:bg-[#5d402e]">
             Book Appointment <ArrowUpRight size={15} />
           </Link>
         </div>
@@ -89,7 +89,7 @@ export default function Header() {
               </Link>
             ))}
             <Link
-              href="/book"
+              href="/appointments"
               onClick={() => setMenuOpen(false)}
               className="mt-5 inline-flex items-center justify-center gap-2 rounded-full bg-[#76543d] px-5 py-3.5 text-sm font-semibold text-white transition hover:bg-[#5d402e]"
             >

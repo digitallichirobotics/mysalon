@@ -51,7 +51,7 @@ export default function ServicesPage() {
         <p className="mx-auto mt-6 max-w-xl text-sm leading-7 text-[#806d5f] sm:text-base">
           From everyday essentials to special-occasion treatments, discover a little time dedicated entirely to you.
         </p>
-        <Link href="/book" className="mt-8 inline-flex items-center gap-2 rounded-full bg-[#76543d] px-7 py-3.5 text-sm font-medium text-white transition hover:bg-[#5d402e]">
+        <Link href="/appointments" className="mt-8 inline-flex items-center gap-2 rounded-full bg-[#76543d] px-7 py-3.5 text-sm font-medium text-white transition hover:bg-[#5d402e]">
           Book an appointment <ArrowRight size={17} />
         </Link>
       </section>

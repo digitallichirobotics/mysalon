@@ -1,7 +1,7 @@
 
 import HomeHero from '../../features/home/components/HomeHero';
 import HomeServices from '../../features/home/components/HomeServices';
-import HomeAbout from '../../features/home/components/HomeAbout';
+// import HomeAbout from '../../features/home/components/HomeAbout';
 import HomeOffers from '../../features/home/components/HomeOffers';
 import HomeTeam from '../../features/home/components/HomeTeam';
 import HomeTestimonials from '../../features/home/components/HomeTestimonials';
@@ -14,7 +14,7 @@ export default function HomePage() {
     <>
       <HomeHero />
       <HomeServices />
-      <HomeAbout />
+      {/* <HomeAbout /> */}
       <HomeOffers />
       <HomeTeam />
       <HomeTestimonials />
