@@ -53,7 +53,7 @@ export default function HomeHero() {
 
     {/* Hero Image */}
     <Image
-      src="/images/hero_img/hero.png"
+      src="/images/hero_img/hero.jpg"
       alt="Maison Belle Beauty and Wellness"
       fill
       priority

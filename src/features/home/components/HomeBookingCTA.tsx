@@ -23,7 +23,7 @@ export default function HomeBookingCTA() {
             </p>
 
             <div className="mt-8 flex flex-col gap-3 sm:flex-row">
-              <Link href="/book" className="inline-flex items-center justify-center gap-2 rounded-full bg-[#f4e6d8] px-7 py-3.5 text-sm font-semibold text-[#604735] transition hover:bg-white">
+              <Link href="/appointments" className="inline-flex items-center justify-center gap-2 rounded-full bg-[#f4e6d8] px-7 py-3.5 text-sm font-semibold text-[#604735] transition hover:bg-white">
                 Book an appointment <ArrowRight size={17} />
               </Link>
               <Link href="/services" className="inline-flex items-center justify-center rounded-full border border-white/30 px-7 py-3.5 text-sm font-medium text-white transition hover:bg-white/10">

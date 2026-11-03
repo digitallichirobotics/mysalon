@@ -69,7 +69,7 @@ export default function HomeContact() {
             <div className="mt-8 space-y-4">
               {[
                 ['Monday – Friday', '10:00 AM – 8:00 PM'],
-                ['Saturday', '10:00 AM – 8:00 PM'],
+                ['Saturday', '9:00 AM – 9:00 PM'],
                 ['Sunday', '11:00 AM – 6:00 PM'],
               ].map(([day, hours]) => (
                 <div key={day} className="flex flex-wrap justify-between gap-2 border-b border-[#f0e7df] pb-4 text-sm">

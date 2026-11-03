@@ -5,10 +5,10 @@ import { useEffect, useState } from 'react';
 
 const quickLinks = [
   { label: 'Home', href: '/' },
-  { label: 'About Us', href: '/#about' },
-  { label: 'Our Services', href: '/#services' },
-  { label: 'Our Gallery', href: '/#gallery' },
-  { label: 'Contact Us', href: '/#contact' },
+  { label: 'About Us', href: '/about' },
+  { label: 'Our Services', href: '/services' },
+  { label: 'Our Gallery', href: '/gallery' },
+  { label: 'Contact Us', href: '/contact' },
 ];
 
 const services = [

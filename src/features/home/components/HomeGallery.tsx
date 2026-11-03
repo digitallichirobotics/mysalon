@@ -9,7 +9,7 @@ import { ArrowRight, Expand, Sparkles, X, ChevronLeft, ChevronRight } from 'luci
 const galleryItems = [
   { title: 'Hair transformations', category: 'Hair', label: 'HAIR STYLING', image: '/images/gallery/hair.jpeg' },
   { title: 'A moment of calm', category: 'Skin', label: 'SKINCARE', image: '/images/gallery/skincare.jpeg' },
-  { title: 'Little beauty details', category: 'Nails', label: 'NAIL CARE', image: '/images/gallery/nail.jpeg' },
+  { title: 'A moment of relaxation', category: 'Massage', label: 'HEAD MASSAGE', image: '/images/gallery/msg.png' },
   { title: 'Your special occasion', category: 'Makeup', label: 'MAKEUP', image: '/images/gallery/makeup.jpeg' },
   { title: 'Relax and recharge', category: 'Wellness', label: 'WELLNESS', image: '/images/gallery/relax.jpeg' },
   { title: 'Beauty in every detail', category: 'Salon', label: 'SALON MOMENTS', image: '/images/gallery/moment.jpeg' },
@@ -44,7 +44,7 @@ export default function HomeGallery() {
               A glimpse into the little details, thoughtful treatments and beautiful moments that make every salon visit special.
             </p>
           </div>
-          <Link href="/book" className="inline-flex w-fit items-center gap-2 rounded-full bg-[#76543d] px-6 py-3 text-sm font-medium text-white transition hover:bg-[#5d402e]">
+          <Link href="/appointments" className="inline-flex w-fit items-center gap-2 rounded-full bg-[#76543d] px-6 py-3 text-sm font-medium text-white transition hover:bg-[#5d402e]">
             Book your visit <ArrowRight size={16} />
           </Link>
         </div>
