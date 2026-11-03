@@ -29,9 +29,9 @@ export default function Header() {
             <Sparkles size={21} strokeWidth={1.4} />
           </span>
           <span>
-            <span className="block font-serif text-xl tracking-wide text-[#49372d] sm:text-2xl">Maison Belle</span>
-            <span className="mt-0.5 block text-[8px] font-medium uppercase tracking-[2.5px] text-[#a47753] sm:text-[9px]">
-              Beauty & Wellness
+            <span className="block font-serif text-xl tracking-wide text-[#49372d] sm:text-2xl">Gilli Gilli</span>
+            <span className="mt-0.5 block text-[10px] font-medium uppercase tracking-[2.5px] text-[#a47753] sm:text-[9px]">
+              Saloon & Spa
             </span>
           </span>
         </Link>
