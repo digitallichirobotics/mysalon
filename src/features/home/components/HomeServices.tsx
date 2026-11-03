@@ -1,21 +1,34 @@
 
 import type { Metadata } from 'next';
 import Link from 'next/link';
+import Image from 'next/image';
+import salonBackground from '../../../../public/images/services/salon-background.jpg';
+import hairStylingImage from '../../../../public/images/services/hair-styling.jpg';
+import hairColourImage from '../../../../public/images/services/hair-colour.jpg';
+import facialImage from '../../../../public/images/services/facial.jpg';
+import pedicureImage from '../../../../public/images/services/pedicure.jpg';
+import hairTreatmentImage from '../../../../public/images/services/hair-treatment.jpg';
+import globalColourImage from '../../../../public/images/services/global-colour.jpg';
+import lotusFacialImage from '../../../../public/images/services/lotus-facial.jpg';
+import premiumFacialImage from '../../../../public/images/services/premium-facial.jpg';
+import hairSpaImage from '../../../../public/images/services/hair-spa.jpg';
 import { ArrowRight, Clock3, Sparkles, Tag } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'Festival Combo Offers | Maison Belle',
+  title: 'Festival Combo Offers | Gilli Gilli Salon and Spa',
   description:
-    'Explore exclusive festival beauty combo offers at Maison Belle. Haircuts, facials, waxing, pedicure and hair treatments at special prices.',
+    'Explore exclusive festival beauty combo offers at Gilli Gilli Salon and Spa. Haircuts, facials, waxing, pedicure and hair treatments at special prices.',
 };
 
 const categories = [
   {
     name: 'Hair Combo Offers',
+    id: 'hair-combos',
     subtitle: 'Style, refresh and transform your hair',
     services: [
       {
         name: 'Hair Cut + Shampoo + Blow Dry',
+        image: hairStylingImage,
         description:
           'Complete hair care with a fresh haircut, refreshing shampoo and professional blow dry.',
         oldPrice: '₹580',
@@ -23,6 +36,7 @@ const categories = [
       },
       {
         name: 'Colour Touch-up + Hair Cut + Full Arm Waxing',
+        image: hairColourImage,
         description:
           'Refresh your hair colour, get a stylish haircut and enjoy full arm waxing.',
         oldPrice: '₹1,400',
@@ -30,6 +44,7 @@ const categories = [
       },
       {
         name: 'Global Hair Colouring + Hair Cut + Full Arm Waxing',
+        image: globalColourImage,
         description:
           'Complete global hair colouring with a beautiful haircut and full arm waxing.',
         oldPrice: '₹2,850',
@@ -39,10 +54,12 @@ const categories = [
   },
   {
     name: 'Waxing & Pedicure',
+    id: 'waxing-pedicure',
     subtitle: 'Feel fresh from head to toe',
     services: [
       {
         name: 'Full Arm + Half Leg Waxing + Pedicure',
+        image: pedicureImage,
         description:
           'Enjoy smooth skin with full arm waxing, half leg waxing and a relaxing normal pedicure.',
         oldPrice: '₹1,050',
@@ -52,10 +69,12 @@ const categories = [
   },
   {
     name: 'Facial & Beauty Combos',
+    id: 'facial-beauty',
     subtitle: 'Your moment to glow',
     services: [
       {
         name: 'Glow Facial + Oxy Bleach + Full Hand Waxing',
+        image: facialImage,
         description:
           'A glow facial combined with face oxy bleach and full hand waxing for a refreshing beauty experience.',
         oldPrice: '₹1,800',
@@ -63,6 +82,7 @@ const categories = [
       },
       {
         name: 'Lotus Normal Facial + Oxy Bleach + Waxing + Pedicure + Threading',
+        image: lotusFacialImage,
         description:
           'Lotus normal facial, face oxy bleach, full arm and half leg waxing, normal pedicure and threading.',
         oldPrice: '₹2,580',
@@ -70,6 +90,7 @@ const categories = [
       },
       {
         name: 'Shahnaz Gold / Diamond Facial Combo',
+        image: premiumFacialImage,
         description:
           'Premium Shahnaz Gold or Diamond facial with haircut, full arm and half leg waxing and threading.',
         oldPrice: '₹3,830',
@@ -79,10 +100,12 @@ const categories = [
   },
   {
     name: 'Hair Treatments',
+    id: 'hair-treatments',
     subtitle: 'Give your hair the care it deserves',
     services: [
       {
         name: 'Hair Spa + Hair Cut + Full Arm Waxing',
+        image: hairSpaImage,
         description:
           'A nourishing hair spa treatment with a fresh haircut and full arm waxing.',
         oldPrice: '₹1,850',
@@ -90,6 +113,7 @@ const categories = [
       },
       {
         name: 'Hair Straightening / Smoothening / Rebonding',
+        image: hairTreatmentImage,
         description:
           'Choose your preferred hair transformation with a haircut and full arm waxing. Pricing depends on hair length.',
         oldPrice: '',
@@ -104,20 +128,22 @@ export default function ServicesPage() {
     <main className="min-h-screen bg-[#fffdf9]">
 
       {/* Hero Section */}
-      <section className="bg-[#f7f1e9] px-5 py-20 text-center sm:px-8 lg:py-28">
-        <p className="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-[3px] text-[#a47753]">
+      <section className="relative isolate overflow-hidden bg-[#49372d] px-5 py-24 text-center sm:px-8 sm:py-28 lg:py-36">
+        <Image src={salonBackground} alt="" fill sizes="100vw" className="-z-20 object-cover object-center" />
+        <div aria-hidden="true" className="absolute inset-0 -z-10 bg-gradient-to-b from-[#21170f]/75 via-[#21170f]/65 to-[#21170f]/85" />
+        <p className="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-[3px] text-[#f0d4b7]">
           <Sparkles size={15} />
           Special Festival Collection
         </p>
 
-        <h1 className="mx-auto mt-5 max-w-3xl font-serif text-5xl leading-tight text-[#49372d] sm:text-6xl lg:text-7xl">
+        <h1 className="mx-auto mt-5 max-w-3xl font-serif text-5xl leading-tight text-white sm:text-6xl lg:text-7xl">
           Beauty that feels{' '}
-          <span className="italic text-[#a47753]">
+          <span className="italic text-[#f0d4b7]">
             special.
           </span>
         </h1>
 
-        <p className="mx-auto mt-6 max-w-xl text-sm leading-7 text-[#806d5f] sm:text-base">
+        <p className="mx-auto mt-6 max-w-xl text-sm leading-7 text-white/85 sm:text-base">
           Celebrate the season with exclusive beauty packages.
           From hair transformations to luxurious facials,
           enjoy your favourite treatments at special festival prices.
@@ -125,7 +151,7 @@ export default function ServicesPage() {
 
         <Link
           href="/appointments"
-          className="mt-8 inline-flex items-center gap-2 rounded-full bg-[#76543d] px-7 py-3.5 text-sm font-medium text-white transition hover:bg-[#5d402e]"
+          className="mt-8 inline-flex items-center gap-2 rounded-full bg-[#f0d4b7] px-7 py-3.5 text-sm font-semibold text-[#49372d] transition hover:bg-white"
         >
           Explore Our Offers
           <ArrowRight size={17} />
@@ -178,7 +204,7 @@ export default function ServicesPage() {
         <div className="space-y-16">
 
           {categories.map((category, index) => (
-            <div key={category.name}>
+            <div key={category.name} id={category.id} className="scroll-mt-28">
 
               {/* Category Heading */}
               <div className="mb-7 flex flex-col gap-2 sm:flex-row sm:items-end sm:justify-between">
@@ -203,42 +229,50 @@ export default function ServicesPage() {
                 {category.services.map((service) => (
                   <article
                     key={service.name}
-                    className="group flex flex-col rounded-3xl border border-[#eee2d7] bg-white p-6 transition duration-300 hover:-translate-y-1 hover:shadow-xl hover:shadow-[#76543d]/5 sm:p-7"
+                    className="group relative isolate flex flex-col overflow-hidden rounded-3xl border border-[#eee2d7] bg-[#30231c] p-6 transition duration-300 hover:-translate-y-1 hover:shadow-xl hover:shadow-[#76543d]/15 sm:p-7"
                   >
+                    <Image
+                      src={service.image}
+                      alt=""
+                      fill
+                      sizes="(max-width: 767px) 100vw, (max-width: 1023px) 50vw, 400px"
+                      className="-z-20 object-cover object-center motion-safe:transition-transform motion-safe:duration-700 motion-safe:group-hover:scale-105"
+                    />
+                    <div aria-hidden="true" className="absolute inset-0 -z-10 bg-gradient-to-b from-[#17100b]/80 via-[#17100b]/90 to-[#17100b]/95" />
 
                     {/* Icon */}
-                    <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-[#f7f1e9] text-[#a47753] transition group-hover:bg-[#76543d] group-hover:text-white">
+                    <div className="flex h-12 w-12 items-center justify-center rounded-2xl border border-white/25 bg-white/15 text-[#f0d4b7] backdrop-blur-sm">
                       <Sparkles size={21} />
                     </div>
 
                     {/* Service Name */}
-                    <h3 className="mt-5 font-serif text-2xl leading-snug text-[#49372d]">
+                    <h3 className="mt-5 font-serif text-2xl leading-snug text-white">
                       {service.name}
                     </h3>
 
                     {/* Description */}
-                    <p className="mt-3 flex-1 text-sm leading-6 text-[#806d5f]">
+                    <p className="mt-3 flex-1 text-sm leading-6 text-white/85">
                       {service.description}
                     </p>
 
                     {/* Pricing */}
-                    <div className="mt-6 border-t border-[#f0e7df] pt-5">
+                    <div className="mt-6 border-t border-white/20 pt-5">
 
                       <div className="flex flex-wrap items-center gap-3">
 
                         {service.oldPrice && (
-                          <span className="text-sm text-[#a99b90] line-through">
+                          <span className="text-sm text-white/65 line-through">
                             {service.oldPrice}
                           </span>
                         )}
 
-                        <span className="font-serif text-2xl font-semibold text-[#76543d]">
+                        <span className="font-serif text-2xl font-semibold text-[#f0d4b7]">
                           {service.price}
                         </span>
 
                       </div>
 
-                      <p className="mt-2 flex items-center gap-1.5 text-xs font-medium text-[#a47753]">
+                      <p className="mt-2 flex items-center gap-1.5 text-xs font-medium text-[#f0d4b7]">
                         <Tag size={13} />
                         Special Festival Price
                       </p>
@@ -247,7 +281,7 @@ export default function ServicesPage() {
                       <Link
                         href={`/appointments?service=${encodeURIComponent(service.name)}`}
                         aria-label={`Book ${service.name}`}
-                        className="mt-5 flex w-full items-center justify-center gap-2 rounded-full bg-[#76543d] px-5 py-3 text-sm font-medium text-white transition hover:bg-[#5d402e]"
+                        className="mt-5 flex w-full items-center justify-center gap-2 rounded-full bg-[#f0d4b7] px-5 py-3 text-sm font-semibold text-[#49372d] transition hover:bg-white focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-white"
                       >
                         Book This Combo
                         <ArrowRight size={17} />

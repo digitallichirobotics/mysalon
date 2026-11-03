@@ -15,7 +15,7 @@ export default function TeamMemberCard({ member }: TeamMemberCardProps) {
         {member.image ? (
           <Image
             src={member.image}
-            alt={`${member.name} - ${member.role}`}
+            alt={`Illustrative salon photo for ${member.role}`}
             fill
             sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
             className="object-cover object-[center_25%] transition duration-500 group-hover:scale-105"
@@ -54,7 +54,7 @@ export default function TeamMemberCard({ member }: TeamMemberCardProps) {
         </div>
 
         <Link
-          href={`/book?staff=${encodeURIComponent(member.id)}`}
+          href={`/appointments?staff=${encodeURIComponent(member.id)}`}
           className="mt-6 inline-flex items-center gap-2 border-t border-[#f0e7df] pt-5 text-sm font-semibold text-[#79583e] transition hover:text-[#49372d]"
         >
           Book with this stylist <ArrowUpRight size={16} />

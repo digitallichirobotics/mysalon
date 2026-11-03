@@ -9,7 +9,7 @@ export const teamMembers: TeamMember[] = [
     experience: '6 years of experience',
     specialties: ['Hair Styling', 'Hair Colour', 'Hair Treatment'],
     initials: 'AM',
-    image: '/images/teams/arjun-mehta.png',
+    image: '/images/teams/salon-stylist.jpg',
     featured: true,
   },
   {
@@ -19,7 +19,7 @@ export const teamMembers: TeamMember[] = [
     experience: '5 years of experience',
     specialties: ['Facials', 'Skin Care', 'Beard Care'],
     initials: 'RS',
-    image: '/images/teams/images.jpeg',
+    image: '/images/teams/spa-specialist.jpg',
   },
   {
     id: 'stylist-3',
@@ -28,6 +28,6 @@ export const teamMembers: TeamMember[] = [
     experience: '4 years of experience',
     specialties: ['Party Makeup', 'Groom Makeup', 'Bridal Makeup'],
     initials: 'KM',
-      image: '/images/teams/jeppe-monster-T_gTN3Po9RQ-unsplash.jpg',
+    image: '/images/teams/makeup-artist.jpg',
   },
 ];

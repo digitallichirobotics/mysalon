@@ -54,7 +54,7 @@ export default function HomeHero() {
     {/* Hero Image */}
     <Image
       src="/images/hero_img/hero.jpg"
-      alt="Maison Belle Beauty and Wellness"
+      alt="Gilli Gilli Salon and Spa Beauty and Wellness"
       fill
       priority
       sizes="(max-width: 1024px) 100vw, 50vw"
