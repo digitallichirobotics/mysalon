@@ -65,17 +65,14 @@ export default function HomeHero() {
     <div className="absolute inset-0 bg-gradient-to-t from-[#49372d]/70 via-transparent to-transparent" />
 
     {/* Everyday Badge */}
-    <div className="absolute left-6 top-8 rounded-full bg-[#fffdf9]/90 px-4 py-2 text-xs tracking-wide text-[#604a3a]">
-      A little luxury, every day
-    </div>
-
+   
     {/* Bottom Text */}
-    <div className="absolute bottom-8 left-7 right-7 text-white">
+    <div className="absolute bottom-10 left-10 right-7 text-white">
       <p className="font-serif text-3xl sm:text-4xl">
         Feel beautifully you.
       </p>
 
-      <p className="mt-3 max-w-xs text-sm leading-6 text-white/90">
+      <p className="mt-1 max-w-xs text-sm leading-6 text-white/90">
         A calmer space. A thoughtful touch. A moment that is yours.
       </p>
     </div>
