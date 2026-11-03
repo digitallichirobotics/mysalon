@@ -7,7 +7,7 @@ import Link from 'next/link';
 import { ArrowRight, Expand, Sparkles, X, ChevronLeft, ChevronRight } from 'lucide-react';
 
 const galleryItems = [
-  { title: 'Hair transformations', category: 'Hair', label: 'HAIR STYLING', image: '/images/gallery/hair.jpeg' },
+  { title: 'Transformations', category: 'Look', label: 'Beauty', image: '/images/gallery/hair.jpeg' },
   { title: 'A moment of calm', category: 'Skin', label: 'SKINCARE', image: '/images/gallery/skincare.jpeg' },
   { title: 'A moment of relaxation', category: 'Massage', label: 'HEAD MASSAGE', image: '/images/gallery/msg.png' },
   { title: 'Your special occasion', category: 'Makeup', label: 'MAKEUP', image: '/images/gallery/makeup.jpeg' },
