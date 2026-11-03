@@ -31,7 +31,7 @@ export default function Header() {
           <span>
             <span className="block font-serif text-xl tracking-wide text-[#49372d] sm:text-2xl">Gilli Gilli</span>
             <span className="mt-0.5 block text-[10px] font-medium uppercase tracking-[2.5px] text-[#a47753] sm:text-[9px]">
-              Saloon & Spa
+              Salon and Spa
             </span>
           </span>
         </Link>

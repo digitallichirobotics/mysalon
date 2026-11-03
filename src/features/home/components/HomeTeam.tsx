@@ -20,7 +20,7 @@ export default function HomeTeam() {
               Meet the people behind your experience, dedicated to thoughtful service and personalised care.
             </p>
           </div>
-          <Link href="/book" className="inline-flex w-fit items-center gap-2 text-sm font-semibold text-[#79583e] transition hover:text-[#49372d]">
+          <Link href="/appointments" className="inline-flex w-fit items-center gap-2 text-sm font-semibold text-[#79583e] transition hover:text-[#49372d]">
             Find your perfect stylist <ArrowRight size={16} />
           </Link>
         </div>
@@ -32,7 +32,7 @@ export default function HomeTeam() {
         </div>
 
         <p className="mt-6 text-center text-xs text-[#907c6d]">
-          Sample profiles for the design preview. Replace them with your actual team details before launch.
+          Illustrative salon and spa photos from Pexels. Team profiles are samples pending actual staff details.
         </p>
       </div>
     </section>

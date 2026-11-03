@@ -76,6 +76,12 @@ export default function HomeAbout() {
               </p>
 
             </div>
+            <div className="relative max-w-sm">
+              <p className="text-xs uppercase tracking-[3px] text-white/80">The Gilli Gilli Salon and Spa philosophy</p>
+              <p className="mt-4 font-serif text-4xl leading-tight text-white sm:text-5xl">Beauty is a feeling, not a standard.</p>
+              <div className="mt-6 h-px w-16 bg-white/70" />
+              <p className="mt-4 text-sm leading-7 text-white/90">A space to pause, recharge and celebrate the beauty that is uniquely yours.</p>
+            </div>
           </div>
 
           {/* Floating Card */}
@@ -110,6 +116,7 @@ export default function HomeAbout() {
             peaceful and effortless. Our approach brings together
             thoughtful treatments, attentive service and an atmosphere
             where you can truly unwind.
+            At Gilli Gilli Salon and Spa, we believe self-care should feel personal, peaceful and effortless. Our approach brings together thoughtful treatments, attentive service and an atmosphere where you can truly unwind.
           </p>
 
           <p className="mt-4 text-sm leading-7 text-[#806d5f]">

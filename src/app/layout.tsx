@@ -7,11 +7,11 @@ import Footer from "../components/layout/Footer";
 
 export const metadata: Metadata = {
   title: {
-    default: "Maison Belle | Beauty & Wellness",
-    template: "%s | Maison Belle",
+    default: "Gilli Gilli Salon and Spa | Beauty & Wellness",
+    template: "%s | Gilli Gilli Salon and Spa",
   },
   description:
-    "Discover personalised beauty treatments, expert care and relaxing salon experiences at Maison Belle.",
+    "Discover personalised beauty treatments, expert care and relaxing salon experiences at Gilli Gilli Salon and Spa.",
 };
 
 export default function RootLayout({ children }: { children: ReactNode }) {

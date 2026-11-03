@@ -1,6 +1,7 @@
 "use client"
 import Link from 'next/link';
-import { ArrowUpRight, Clock3,  MapPin, Phone, Sparkles } from 'lucide-react';
+import { ArrowUpRight, Clock3, MapPin, Phone, Sparkles } from 'lucide-react';
+import { salon } from '../../data/salon';
 import { useEffect, useState } from 'react';
 
 const quickLinks = [
@@ -12,11 +13,11 @@ const quickLinks = [
 ];
 
 const services = [
-  'Hair Styling & Colour',
-  'Skin & Facial Treatments',
-  'Nail Care',
-  'Makeup & Special Occasions',
-  'Relaxation & Wellness',
+  { label: 'Hair Styling & Colour', href: '/services#hair-combos' },
+  { label: 'Skin & Facial Treatments', href: '/services#facial-beauty' },
+  { label: 'Nail Care', href: '/services#waxing-pedicure' },
+  { label: 'Makeup & Special Occasions', href: '/appointments?service=party-makeup' },
+  { label: 'Relaxation & Wellness', href: '/services#hair-treatments' },
 ];
 
 export default function Footer() {
@@ -36,8 +37,8 @@ useEffect(() => {
                 <Sparkles size={21} />
               </span>
               <span>
-                <span className="block font-serif text-2xl tracking-wide">Maison Belle</span>
-                <span className="mt-1 block text-[9px] uppercase tracking-[3px] text-[#d7b494]">Beauty · Care · You</span>
+                <span className="block font-serif text-2xl tracking-wide">Gilli Gilli </span>
+                <span className="mt-1 block text-[9px] uppercase tracking-[3px] text-[#d7b494]">Salon and Spa</span>
               </span>
             </Link>
             <p className="mt-6 max-w-sm text-sm leading-7 text-white/65">
@@ -63,7 +64,9 @@ useEffect(() => {
             <h3 className="font-serif text-xl">Our Services</h3>
             <ul className="mt-6 flex flex-col gap-4">
               {services.map((service) => (
-                <li key={service} className="text-sm leading-5 text-white/65">{service}</li>
+                <li key={service.label}>
+                  <Link href={service.href} className="text-sm leading-5 text-white/65 transition hover:text-[#d7b494] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#d7b494]">{service.label}</Link>
+                </li>
               ))}
             </ul>
           </div>
@@ -73,11 +76,11 @@ useEffect(() => {
             <div className="mt-6 flex flex-col gap-5">
               <div className="flex items-start gap-3">
                 <MapPin size={18} className="mt-0.5 shrink-0 text-[#d7b494]" />
-                <p className="text-sm leading-6 text-white/65">Add your salon address here</p>
+                <a href={salon.maps} target="_blank" rel="noreferrer" className="text-sm leading-6 text-white/65 hover:text-[#d7b494]">{salon.address}</a>
               </div>
               <div className="flex items-start gap-3">
                 <Phone size={18} className="mt-0.5 shrink-0 text-[#d7b494]" />
-                <p className="text-sm leading-6 text-white/65">Add your contact number</p>
+                <a href={salon.phoneHref} className="text-sm leading-6 text-white/65 hover:text-[#d7b494]">{salon.phone}</a>
               </div>
               <div className="flex items-start gap-3">
                 <Clock3 size={18} className="mt-0.5 shrink-0 text-[#d7b494]" />
@@ -85,15 +88,15 @@ useEffect(() => {
               </div>
             </div>
             <div className="mt-6 flex gap-3">
-              <a href="https://www.instagram.com/" target="_blank" rel="noreferrer" aria-label="Instagram" className="flex h-10 w-10 items-center justify-center rounded-full border border-white/20 text-[#d7b494] transition hover:border-[#d7b494] hover:bg-white/5">
-                
+              <a href={salon.facebook} target="_blank" rel="noreferrer" aria-label="Visit our Facebook page" className="flex h-10 w-10 items-center justify-center rounded-full border border-white/20 text-[#d7b494] transition hover:border-[#d7b494] hover:bg-white/5">
+                <span aria-hidden="true" className="font-serif text-xl font-bold">f</span>
               </a>
             </div>
           </div>
         </div>
 
         <div className="flex flex-col gap-4 pt-7 text-xs text-white/50 sm:flex-row sm:items-center sm:justify-between">
-          <p>© {year} Maison Belle. All rights reserved.</p>
+          <p>© {year} Gilli Gilli Salon and Spa. All rights reserved.</p>
           <div className="flex flex-wrap gap-5">
             <Link href="/privacy" className="transition hover:text-[#d7b494]">Privacy Policy</Link>
             <Link href="/terms" className="transition hover:text-[#d7b494]">Terms & Conditions</Link>

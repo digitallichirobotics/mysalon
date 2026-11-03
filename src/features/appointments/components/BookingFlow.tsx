@@ -334,7 +334,7 @@ export default function BookingFlow() {
             className="inline-flex items-center gap-2 text-sm text-[#a47753] hover:text-[#76543d]"
           >
             <Sparkles size={17} />
-            Maison Belle
+            Gilli Gilli Salon and Spa
           </Link>
 
           <p className="mt-5 text-xs font-semibold uppercase tracking-[3px] text-[#a47753]">

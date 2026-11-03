@@ -1,22 +1,26 @@
 
 import Link from 'next/link';
-import { ArrowRight, Clock3, Mail, MapPin, Phone, Sparkles } from 'lucide-react';
+import { ArrowRight, Clock3, ExternalLink, MapPin, Phone, Sparkles } from 'lucide-react';
+import { salon } from '../../../data/salon';
 
 const contactDetails = [
   {
     icon: MapPin,
     title: 'Visit our salon',
-    detail: 'Add your salon address here',
+    detail: salon.address,
+    href: salon.maps,
   },
   {
     icon: Phone,
     title: 'Give us a call',
-    detail: '+91 XXXXX XXXXX',
+    detail: salon.phone,
+    href: salon.phoneHref,
   },
   {
-    icon: Mail,
-    title: 'Email us',
-    detail: 'hello@maisonbelle.com',
+    icon: ExternalLink,
+    title: 'Follow us on Facebook',
+    detail: 'Visit our Facebook page',
+    href: salon.facebook,
   },
 ];
 
@@ -37,14 +41,14 @@ export default function HomeContact() {
             </p>
 
             <div className="mt-9 space-y-6">
-              {contactDetails.map(({ icon: Icon, title, detail }) => (
+              {contactDetails.map(({ icon: Icon, title, detail, href }) => (
                 <div key={title} className="flex items-start gap-4">
                   <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl border border-[#e7d7c8] bg-white text-[#a47753]">
                     <Icon size={20} strokeWidth={1.7} />
                   </div>
                   <div>
                     <h3 className="text-sm font-semibold text-[#49372d]">{title}</h3>
-                    <p className="mt-1 text-sm text-[#806d5f]">{detail}</p>
+                    <a href={href} target={href.startsWith('https:') ? '_blank' : undefined} rel={href.startsWith('https:') ? 'noreferrer' : undefined} className="mt-1 block text-sm leading-6 text-[#806d5f] underline-offset-4 hover:underline">{detail}</a>
                   </div>
                 </div>
               ))}
@@ -91,9 +95,13 @@ export default function HomeContact() {
           </div>
         </div>
 
-        <p className="mt-12 border-t border-[#e8dbce] pt-6 text-center text-xs leading-5 text-[#907c6d]">
-          Please replace the sample contact details and opening hours with your salon’s actual information before launch.
-        </p>
+        <div className="mt-12 overflow-hidden rounded-3xl border border-[#e8dbce] bg-white">
+          <iframe title="Salon location on Bajrakabati Road, Kataka" src={salon.mapEmbed} loading="lazy" referrerPolicy="no-referrer-when-downgrade" allowFullScreen className="h-80 w-full border-0 sm:h-96" />
+          <div className="flex flex-wrap items-center justify-between gap-4 p-5 sm:p-6">
+            <p className="max-w-xl text-sm leading-6 text-[#806d5f]">{salon.address}</p>
+            <a href={salon.maps} target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 rounded-full bg-[#76543d] px-5 py-3 text-sm font-medium text-white hover:bg-[#5d402e]">Get directions <ArrowRight size={16} /></a>
+          </div>
+        </div>
       </div>
     </section>
   );

@@ -11,7 +11,7 @@ import BookingFlow from '../../../features/appointments/components/BookingFlow';
 
 export const metadata: Metadata = {
   title: 'Book an Appointment',
-  description: 'Choose your salon service, stylist, date and time at Maison Belle.',
+  description: 'Choose your salon service, stylist, date and time at Gilli Gilli Salon and Spa.',
 };
 
 export default function BookingPage() {
